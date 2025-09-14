@@ -1,0 +1,79 @@
+Cascade and Positioning
+    Inline CSS have the most preference (Highest priority)
+
+    For internal and external css whichever is listed at the bottom that gets priority over another.
+
+So the order: 
+    Inline always at top
+    Internal and external depends whichever is at the top position.
+
+Priority of css:
+    First priority is given to id selector,
+    second priority is given to class
+    and finally to element
+
+Priority order of css 
+    0. !important
+    1. Inline css
+    2. id selector
+    3. class selector
+    4. tag selector
+
+!important -----> using this property we can override the priority at any level
+
+                        CSS Positioning
+
+position:
+    static ----> default 
+    relative
+    fixed
+    sticky
+    absolute
+
+
+relative:
+
+position the element relative to the original position.
+    h2 {
+  background-color: orange;
+  position: relative;
+  left: 20px;   \\ shifts 20px from the left side of original position and shfits to right side
+  /* top: 250px; */ shift the element 250px from the top of relative position
+  /* bottom: 65px; */ shift the element 65px above from the bottom of the original position
+}
+
+
+fixed:
+to fix the element relative to the window.
+position:fixed;
+top:20px;
+left:40px;
+right:48px;
+
+
+for position relative
+no other element can occupy the original place of the element even though its displaced using relative and shifting some distances.
+
+for fixed: 
+the original place is vaccant and other can occupy that position
+
+sticky:
+works similar to fixed but keeps the element fixed when its top is 0px;
+
+h4 {
+  background-color: maroon;
+  position: sticky;
+  top: 50px;
+}
+this makes h4 fixed when its 50px from the above height;
+
+
+absolute:
+sets its position relative to nearest positioned ancestor.
+if no ancestor is positioned then it sets its position relative to the window.
+
+z-index: 10
+z-index determines which element will be visible when one element overrides the other.
+
+default z-index for all the element is 0
+the element whose z-index is higher that will be visible.

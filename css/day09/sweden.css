@@ -1,0 +1,37 @@
+#container {
+  width: 400px;
+  height: 300px;
+  background: yellow;
+  position: relative;
+}
+.box {
+  background: blue;
+}
+.small {
+  height: 100px;
+  width: 100px;
+}
+
+.big {
+  height: 100px;
+  width: 200px;
+}
+
+#top-left {
+  position: absolute;
+}
+#bottom-left {
+  position: absolute;
+  bottom: 0px;
+}
+
+#top-right {
+  position: absolute;
+  left: 200px;
+}
+
+#bottom-right {
+  position: absolute;
+  left: 200px;
+  bottom: 0px;
+}
