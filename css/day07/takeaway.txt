@@ -1,0 +1,160 @@
+css ----> cascading sytle sheet
+
+Inline css
+this is the css giving type where css is given to the element itself
+e.g:
+ <h1 style="background-color: aqua">Gym Website</h1>
+
+
+Internal CSS
+This type of css is written inside the <style></style> tag of <head></head> section
+e.g:
+    <style>
+      h1 {
+        background-color: blue;
+        color: white;
+      }
+      h2 {
+        background-color: antiquewhite;
+      }
+    </style>
+
+
+External CSS
+In this type of styling we make an external css file for e.g. sytle.css and define the style for element in this file.
+
+for e.g:
+h1 {
+  background-color: pink;
+}
+h2 {
+  background-color: aquamarine;
+}
+
+link the style.css file in the html file using:
+<link rel="stylesheet" href="style.css">
+in the head section
+
+
+
+usability:
+inline and internal are rarely used more rarely inline
+in general practice we use external css only
+
+benefits of using external css ???
+    same css file can be used for multiple html file too.
+    
+
+
+
+CSS selector
+  1.Element selector / tag selector :
+    selecting an element based on the tag
+  like: h1, h2, ol, li, ......
+
+  h1{
+    background-color:grey;
+  }
+
+  2. Id selector
+    id is given to the element and style is given on the basis of that id
+          <h2 id="first">Exercise</h2>
+          #first{
+            background-color:grey
+          }
+
+3. Class Selector:
+          class is used for grouping.
+          multiple element can share a same class
+          a element can have both class and id but id style overrides the class style
+
+4. group based selection:
+          group based selection refers to giving same css to multiple classes, elements or id
+          for e.g:
+          <h1>Name</h1>
+          <h2 id="mname">Mid Name</h2>
+          <h3 class="lname">Last Name</h3>
+
+          css:
+          h1, #mname, .lname{
+            background-color:violet
+          }
+
+          here all the h1 element element with id mname and element with class lname will be styled to background-color as violet
+
+Color choice / CSS Color
+1.rgb color system: 
+    background-color: rgb(127,153,205)
+    rgb refers to reg green blue and every color has the value from 0 to 255
+
+2.rgba where a is an alpha which refers to transparency 
+ a 'alpha' has the value between 0 to 1 where 0 is transparent and 1 is full visible
+
+3. hsl 
+ hue, saturation, light
+  hue: the pure color itself, value range from 0 to 360
+  0 is red, 120 is green and 240 is blue
+  saturation: the intensity or vibrancy of the color 0% to 100%
+  lightness: the brightness of the color 0% to 100%
+
+generally rgb is highly used
+
+hexadecimal form of color:
+rgb(120,140,155) this is rgb format 
+#788c9b this is hexadecimal format
+78 -> red
+8c -> green
+9b -> blue
+
+
+Font
+what is font ?
+
+pixel: ----> picture element
+  1 pixel is equal to 1/96 of an inch  THIS IS WRONG 
+  pixel is the smallest unit of any image and its size depends upon the screen NOT 1/96 of inch
+
+font size:
+em
+em refers to multiple of parents size:
+if 1 em then size is equal to size of parent
+for 2 em size equal to two times of parent's size  
+
+rem:
+refers to root element which is html tag  
+
+vw
+h1{
+  font-size: 2vw
+}
+this means the font size of h1 element is equal to 2% of view-port width
+
+vh
+h1{
+  font-size: 2vh
+}
+this means the font size of h1 element is equal to 2% of view-port height
+
+percentage unit (%)
+h1{
+  font-size: 20%
+}
+
+means the font size of h1 element is 20% of its direct parent.
+
+font-weight 100 to 900
+font-style: italic
+font-family: defining font appereance (e.g. via google fonts)
+
+p
+{
+  font-style:italic
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: Georgia, serif
+}
+
+shorthand way
+p{
+  font:italic 700 1rem Georgia,serif;
+}

@@ -1,0 +1,37 @@
+h1 {
+  background-color: pink;
+  font-size: 50px;
+}
+ul {
+  background-color: aquamarine;
+}
+h2 {
+  background-color: blue;
+}
+
+.greenbg {
+  background-color: green;
+}
+
+/* #first {
+  background-color: grey;
+} */
+
+.fourth {
+  background-color: red;
+}
+
+h1 {
+  background-color: rgba(60, 0, 60, 0.5);
+}
+
+h2 {
+  background-color: hsl(268, 73%, 24%);
+}
+h1 {
+  font-size: 100px;
+}
+li {
+  font-size: 1em;
+}
+
