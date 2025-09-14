@@ -1,0 +1,47 @@
+CSS Box Model and Display Property
+
+  border-width: 5px;
+  border-style: solid;
+  border-color: green;
+
+short hand==> border: 5px solid green;
+
+padding: distance between the border and the content;
+padding: 5px // it push the content 5px inward from all 4 sides
+
+margin: this is the distance between entire box and other content
+margin: 20px // pushes the entire box 20px from all 4 sides
+
+
+padding:10px 20px 30px 40px 
+is equivalent to 
+                padding-top:10px;
+                padding-right:20px;
+                padding-bottom:30px;
+                padding-left:40px;
+
+Inline Element vs Block Element
+
+block element takes the entire available width
+inline element only takes the width required for it.
+
+
+
+padding and margin for inline elements are applied in horizontal only.
+
+to make inline element to act as a block level element just change the display of that element to 
+display:block
+
+and to change the display of block level element to inline simply change the display to inline
+display:inline
+
+
+display: inline-block 
+this gives the property of both inline and block element
+
+
+when property set as:
+   box-sizing:border-box;
+then the height and width given will accomodate the padding margin and border
+
+ box-sizing:content-box then the content will get that height and width while padding marign border will increases height and width accordingly
