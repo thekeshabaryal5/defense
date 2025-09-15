@@ -1,0 +1,17 @@
+First Hackathon / Pure HTML Hackathon 
+                                                        Due date: sept 19
+
+Rule of thumb :
+    Website based on html, NO CSS 
+    from first 6 videos
+
+What website needs to be like: 
+    should have six pages.
+    all pages should have summary of respective videos 
+
+    all pages having heading as lecture 1, lecture 2 ..... lecture 6
+
+    Host the website and share the link in this form: https://info-vault-hub.vercel.app/
+
+Multi page website each pages containing content of the respective vide lecture from 1 to 6
+
