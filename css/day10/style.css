@@ -1,0 +1,32 @@
+.box {
+  height: 100px;
+  width: 100px;
+}
+
+.first {
+  background: orange;
+}
+
+.second {
+  background-color: green;
+}
+
+.third {
+  background-color: red;
+  flex-grow: 10;
+  align-self: flex-end;
+}
+
+.fourth {
+  background-color: chartreuse;
+  flex-grow: 1;
+}
+
+#container {
+  background-color: antiquewhite;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  flex-wrap: wrap;
+}

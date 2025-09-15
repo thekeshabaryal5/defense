@@ -1,0 +1,25 @@
+FlexBox in CSS
+
+Parent-child relation
+
+Parent -> container / flex-container
+child -> item / flex-item
+
+for container -> display:flex;
+
+.container{
+    display:flex;
+    flex-direction:column // default is row.
+    justify-content: start/end/center/space-around  default is start.
+    align-item: end ----> this works in cross-axis
+}
+
+justify-content always works in main axis.
+
+when flex-direction:row ---> main axis is row
+when flex-direction: column ----> main axis is column
+
+flex-wrap:wrap;
+flex-grow:1;
+flex-shrink:1;
+flex-basis:200px; // overrides the width/height of the element to 200px along the main axis
