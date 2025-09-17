@@ -1,0 +1,27 @@
+************************* CSS Grid ******************************
+Grid is used for two dimensional grid.
+grid is a matrix for rows and columns.
+Patent: Grid (grid container)
+rows column
+
+items: grid-items
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr; // this means 1 1 fraction to two of them
+  grid-template-columns: 1fr 1fr; // this means 1 1 fraction to two of them
+  gap: 10px;
+  height: 400px;
+  width: 400px;
+  background-color: blue;
+}
+
+
+grid-row-start:1
+grid-row-end:4
+
+this can be written as -> grid-row :1/4
+
+grid-column-start:
+grid-column-end:
+
