@@ -1,0 +1,31 @@
+media-query
+
+
+/* @media screen and (max-width: 600px) {
+  .container {
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+    font-size: 30px;
+  }
+} */
+
+@media screen and (min-width: 800px) {
+  .container {
+    background-color: orange;
+    font-size: 20px;
+  }
+}
+
+
+box shadow
+to give a shadow for a box.
+box-shadow:10px 20px 5px 7px blue;
+first 10px is x-offset
+20px is y-offset
+5px refers to blur radius.
+7px refers to spread radius.
+blue is the color for the blurness.
+
+
+overflow:scroll / hidden
