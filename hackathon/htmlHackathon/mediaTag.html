@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>deployment</title>
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./elements.html">HTML Elements</a></li>
+          <li><a href="./list-table.html">Nested List & Tables</a></li>
+          <li><a href="./file-path.html">File Path</a></li>
+          <li><a href="./forms.html">HTML Form</a></li>
+          <li><a href="./mediaTag.html">Media Tags</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header section ends  -->
+    <!-- main section starts  -->
+    <main>
+      <h1>HTML Media</h1>
+
+      <h2>First Principle</h2>
+      <p>
+        The web is more than text and images. In the past, video and audio
+        required plugins like Flash or QuickTime. HTML5 introduced
+        <code>&lt;video&gt;</code> and <code>&lt;audio&gt;</code> for native,
+        plugin-free media.
+      </p>
+
+      <h2>1. The &lt;video&gt; Tag</h2>
+      <p>Basic usage:</p>
+      <pre><code>&lt;video src="my-video.mp4"&gt;&lt;/video&gt;</code></pre>
+      <p>Add <code>controls</code> for play, pause, and volume:</p>
+      <pre><code>&lt;video src="my-video.mp4" controls&gt;&lt;/video&gt;</code></pre>
+
+      <h3>Useful Attributes</h3>
+      <ul>
+        <li><code>width</code> and <code>height</code>: set dimensions</li>
+        <li>
+          <code>autoplay</code>: start automatically (often requires
+          <code>muted</code>)
+        </li>
+        <li><code>loop</code>: restart when finished</li>
+        <li><code>poster</code>: thumbnail before play</li>
+      </ul>
+
+      <h2>2. The &lt;audio&gt; Tag</h2>
+      <p>Similar to video, but only for sound:</p>
+      <pre><code>&lt;audio src="song.mp3" controls&gt;&lt;/audio&gt;</code></pre>
+
+      <h2>3. Multiple Sources (&lt;source&gt;)</h2>
+      <p>
+        Different browsers support different formats. Use
+        <code>&lt;source&gt;</code> for fallbacks:
+      </p>
+      <pre><code>&lt;video controls&gt;
+  &lt;source src="movie.webm" type="video/webm"&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  Your browser does not support the video tag.
+&lt;/video&gt;</code></pre>
+
+      <h2>4. Accessibility with &lt;track&gt;</h2>
+      <p>Add captions or subtitles:</p>
+      <pre><code>&lt;video controls&gt;
+  &lt;source src="video.mp4" type="video/mp4"&gt;
+  &lt;track src="captions_en.vtt" kind="captions" srclang="en" label="English"&gt;
+&lt;/video&gt;</code></pre>
+
+      <h2>5. Methods of Embedding</h2>
+      <h3>Method 1: Using &lt;source&gt;</h3>
+      <p>Best for compatibility. Supports multiple formats.</p>
+      <h3>Method 2: Using <code>src</code> Attribute</h3>
+      <p>Simpler, but only one format. May fail if unsupported.</p>
+
+      <h2>Comparison</h2>
+      <table border="1" cellpadding="5">
+        <tr>
+          <th>Feature</th>
+          <th>&lt;source&gt; Method</th>
+          <th>src Method</th>
+        </tr>
+        <tr>
+          <td>Browser Compatibility</td>
+          <td>Excellent (multiple formats)</td>
+          <td>Good, but limited</td>
+        </tr>
+        <tr>
+          <td>Flexibility</td>
+          <td>High</td>
+          <td>Low</td>
+        </tr>
+        <tr>
+          <td>Simplicity</td>
+          <td>More complex</td>
+          <td>Very simple</td>
+        </tr>
+        <tr>
+          <td>Fallback</td>
+          <td>Yes</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>Best Use</td>
+          <td>Public websites</td>
+          <td>Quick tests or internal use</td>
+        </tr>
+      </table>
+
+      <h2>6. HTML Entities</h2>
+      <p>Entities let you display reserved symbols:</p>
+      <ul>
+        <li>&copy; → <code>&amp;copy;</code> or <code>&amp;#169;</code></li>
+        <li>&reg; → <code>&amp;reg;</code> or <code>&amp;#174;</code></li>
+        <li>&trade; → <code>&amp;trade;</code> or <code>&amp;#8482;</code></li>
+        <li>&lt; → <code>&amp;lt;</code> or <code>&amp;#60;</code></li>
+        <li>&gt; → <code>&amp;gt;</code> or <code>&amp;#62;</code></li>
+        <li>&amp; → <code>&amp;amp;</code> or <code>&amp;#38;</code></li>
+      </ul>
+
+      <h2>7. Example Footer</h2>
+      <pre><code>&lt;footer&gt;
+  &lt;p&gt;Copyright &amp;copy; 2025 My Website. All Rights Reserved.&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+
+      <a href="forms.html">
+        <button>Previous</button>
+      </a>
+      <hr />
+    </main>
+    <!-- main section ends  -->
+    <!-- footer section starts  -->
+    <footer>
+      <p>Go to <a href="./index.html">Home</a></p>
+      <p>
+        Reach me via <a href="https://github.com/thekeshabaryal5">Github</a>
+        <a href="https://www.linkedin.com/in/thekeshabaryal5/">linkedIn</a>
+        <a href="mailto:keshabaryal152@gmail.com">Email</a>
+      </p>
+      <p>Copyright &copy;2025 by Keshab Aryal | All Rights Reserved</p>
+    </footer>
+    <!-- footer section ends  -->
+  </body>
+</html>

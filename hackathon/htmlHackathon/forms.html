@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./elements.html">HTML Elements</a></li>
+          <li><a href="./list-table.html">Nested List & Tables</a></li>
+          <li><a href="./file-path.html">File Path</a></li>
+          <li><a href="./forms.html">HTML Form</a></li>
+          <li><a href="./mediaTag.html">Media Tags</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header section ends  -->
+    <!-- main section starts  -->
+    <main>
+      <h1>Forms in HTML</h1>
+
+      <h2>Why Forms?</h2>
+      <p>
+        Forms make the web interactive by collecting information from users and
+        sending it to servers. Without them, there would be no logins, searches,
+        or purchases.
+      </p>
+
+      <h2>The &lt;form&gt; Element</h2>
+      <p>Acts as a container for all input fields and a submit button.</p>
+
+      <h2>1. The &lt;input&gt; Element</h2>
+      <p>
+        Creates input fields. Behavior changes based on <code>type</code> (e.g.,
+        text, password, number, date).
+      </p>
+      <pre><code>&lt;input type="text"&gt;</code></pre>
+
+      <h2>2. Labels (&lt;label&gt;)</h2>
+      <p>
+        Gives meaning to input fields. Connected using <code>for</code> (label)
+        and <code>id</code> (input).
+      </p>
+      <pre><code>&lt;label for="firstName"&gt;First Name:&lt;/label&gt;
+&lt;input type="text" id="firstName" name="firstName"&gt;</code></pre>
+
+      <h2>3. Submit Button</h2>
+      <p>
+        Submits form data. Better to use
+        <code>&lt;button type="submit"&gt;</code> instead of
+        <code>&lt;input type="submit"&gt;.</code>
+      </p>
+
+      <h2>4. Radio Buttons</h2>
+      <p>
+        Used when only one option can be chosen. All radios in a group share the
+        same <code>name</code>.
+      </p>
+      <pre><code>&lt;input type="radio" name="shirtSize" value="small"&gt; Small</code></pre>
+
+      <h2>5. Checkboxes</h2>
+      <p>Allow multiple selections. All share the same <code>name</code>.</p>
+      <pre><code>&lt;input type="checkbox" name="toppings" value="mushrooms"&gt; Mushrooms</code></pre>
+
+      <h2>6. Textarea</h2>
+      <p>For multi-line text input like comments.</p>
+      <pre><code>&lt;textarea id="comments" name="comments" rows="4" cols="50"&gt;&lt;/textarea&gt;</code></pre>
+
+      <h2>7. Dropdown (&lt;select&gt;)</h2>
+      <p>
+        Compact list of options using <code>&lt;option&gt;</code> inside
+        <code>&lt;select&gt;</code>.
+      </p>
+      <pre><code>&lt;select name="country"&gt;
+  &lt;option value="in"&gt;India&lt;/option&gt;
+  &lt;option value="us"&gt;USA&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+
+      <h2>8. Specialized Inputs</h2>
+      <ul>
+        <li><code>type="password"</code> → Masks sensitive input.</li>
+        <li>
+          <code>type="number" min="18" max="99"</code> → Restricts numeric input
+          to a range.
+        </li>
+        <li><code>type="date"</code> → Provides a date picker.</li>
+      </ul>
+      <h2>Demo form</h2>
+      <form action="#" method="post">
+        <!-- Text input with label -->
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" /><br /><br />
+
+        <!-- Password field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" /><br /><br />
+
+        <!-- Number input -->
+        <label for="age">Age (18–99):</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          min="18"
+          max="99"
+        /><br /><br />
+
+        <!-- Date input -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" /><br /><br />
+
+        <!-- Radio buttons -->
+        <p>Shirt Size:</p>
+        <input type="radio" name="shirtSize" value="small" /> Small
+        <input type="radio" name="shirtSize" value="medium" /> Medium
+        <input type="radio" name="shirtSize" value="large" /> Large<br /><br />
+
+        <!-- Checkboxes -->
+        <p>Select Toppings:</p>
+        <input type="checkbox" name="toppings" value="mushrooms" /> Mushrooms
+        <input type="checkbox" name="toppings" value="cheese" /> Cheese
+        <input type="checkbox" name="toppings" value="onions" />
+        Onions<br /><br />
+
+        <!-- Textarea -->
+        <label for="comments">Comments:</label><br />
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea
+        ><br /><br />
+
+        <!-- Dropdown -->
+        <label for="country">Country:</label>
+        <select name="country" id="country">
+          <option value="np">Nepal</option>
+          <option value="in">India</option>
+          <option value="us">USA</option></select
+        ><br /><br />
+
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+      </form>
+      <h2>Summary</h2>
+      <ul>
+        <li>Use <code>&lt;form&gt;</code> to group fields.</li>
+        <li><code>&lt;label&gt;</code> improves usability & accessibility.</li>
+        <li>
+          <code>name</code> attributes are crucial for identifying submitted
+          data.
+        </li>
+        <li>Use the right input type for better user experience.</li>
+      </ul>
+
+      <a href="file-path.html">
+        <button>Previous</button>
+      </a>
+      <a href="mediaTag.html">
+        <button>Next</button>
+      </a>
+      <hr />
+    </main>
+    <!-- main section ends  -->
+    <!-- footer section starts  -->
+    <footer>
+      <p>Go to <a href="./index.html">Home</a></p>
+      <p>
+        Reach me via <a href="https://github.com/thekeshabaryal5">Github</a>
+        <a href="https://www.linkedin.com/in/thekeshabaryal5/">linkedIn</a>
+        <a href="mailto:keshabaryal152@gmail.com">Email</a>
+      </p>
+      <p>Copyright &copy;2025 by Keshab Aryal | All Rights Reserved</p>
+    </footer>
+    <!-- footer section ends  -->
+  </body>
+</html>

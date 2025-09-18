@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>file-path</title>
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./elements.html">HTML Elements</a></li>
+          <li><a href="./list-table.html">Nested List & Tables</a></li>
+          <li><a href="./file-path.html">File Path</a></li>
+          <li><a href="./forms.html">HTML Form</a></li>
+          <li><a href="./mediaTag.html">Media Tags</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header section ends  -->
+    <!-- main section starts  -->
+    <main>
+      <h2>File Path system</h2>
+
+      <h3>Step 1: The First Principle (The Fundamental Truth)</h3>
+      <p>
+        The most fundamental truth is this:
+        <strong>A website is not one single file.</strong>
+      </p>
+      <p>
+        It's a collection of different files (HTML, CSS, JavaScript, images,
+        videos, fonts) that all need to work together. These files are organized
+        into folders, just like documents on your computer.
+      </p>
+
+      <h3>Step 2: The Core Problem</h3>
+      <p>
+        If your <code>index.html</code> file needs to display an image named
+        <code>logo.png</code>, how does the HTML file tell the browser where to
+        <strong>find</strong> it? This is where <strong>file paths</strong> come
+        in.
+      </p>
+
+      <h3>Relative File Paths</h3>
+      <p>
+        Relative paths give directions to a file
+        <strong
+          >starting from the location of the file you are currently in</strong
+        >.We will use this 99% of the time.
+      </p>
+
+      <pre>
+my-website/
+├── index.html
+├── about.html
+│
+├── images/
+│   ├── logo.png
+│   └── hero.jpg
+│
+└── pages/
+    ├── contact.html
+    └── terms.html
+  </pre
+      >
+
+      <h4>Scenario 1: Same Folder</h4>
+      <pre><code>&lt;a href="about.html"&gt;About Us&lt;/a&gt;</code></pre>
+
+      <h4>Scenario 2: Sub-Folder (Going Down)</h4>
+      <pre><code>&lt;img src="images/logo.png" alt="My Website Logo"&gt;</code></pre>
+
+      <h4>Scenario 3: Parent Folder (Going Up)</h4>
+      <pre><code>&lt;img src="../images/logo.png" alt="My Website Logo"&gt;</code></pre>
+
+      <h3>Absolute File Paths</h3>
+      <p>
+        Absolute file paths give the <strong>full URL</strong> to a resource.
+        Used for external links.
+      </p>
+      <pre><code>&lt;a href="https://www.google.com"&gt;Search on Google&lt;/a&gt;
+&lt;img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Html5_logo_and_wordmark.svg" alt="HTML5 Logo"&gt;</code></pre>
+
+      <h3>Why not use absolute paths for your own files?</h3>
+      <p>
+        Local computer paths like
+        <code>C:/Users/Arjun/Desktop/my-website/images/logo.png</code> only work
+        on your computer and break on servers. Browsers also prevent HTML from
+        accessing private local files for security reasons.
+      </p>
+
+      <h3>Summary / Rules of Thumb</h3>
+      <ol>
+        <li>For your own files: use <strong>Relative Paths</strong>.</li>
+        <li>For other websites’ files: use <strong>Absolute Paths</strong>.</li>
+      </ol>
+
+      <h3>Windows vs macOS/Linux File Systems</h3>
+      <table border="1">
+        <tr>
+          <th>Feature</th>
+          <th>Windows</th>
+          <th>macOS / Linux</th>
+        </tr>
+        <tr>
+          <td>Starting Point</td>
+          <td>Drive Letter (C:\)</td>
+          <td>Single Forward Slash (/)</td>
+        </tr>
+        <tr>
+          <td>Directory Separator</td>
+          <td>Backslash (\)</td>
+          <td>Forward Slash (/)</td>
+        </tr>
+        <tr>
+          <td>Example</td>
+          <td>C:\Users\JohnDoe\Documents\report.docx</td>
+          <td>/Users/johndoe/Documents/report.docx</td>
+        </tr>
+      </table>
+
+      <h2>HTML Boilerplate Code</h2>
+      <p>
+        Every HTML page should start with a <strong>boilerplate</strong> to give
+        the browser setup info.
+      </p>
+
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+      <p>
+        Each line (doctype, html, head, meta, title, body) serves a purpose for
+        standards, SEO, mobile optimization, and accessibility.
+      </p>
+
+      <h3>Why websites work even without boilerplate</h3>
+      <p>
+        Browsers are forgiving and guess missing parts, but this causes quirks
+        mode, broken characters, bad mobile experiences, and poor SEO. Always
+        use a boilerplate.
+      </p>
+
+      <h2>Multipage Website</h2>
+      <p>
+        Websites usually have multiple pages (Home, About, Contact). To connect
+        them:
+      </p>
+      <ul>
+        <li>Use a consistent structure (same header/footer on all pages).</li>
+        <li>Use <code>&lt;a&gt;</code> tags for navigation links.</li>
+      </ul>
+
+      <h2>The &lt;div&gt;, class, and id</h2>
+      <p>
+        <strong>&lt;div&gt;</strong> is a generic block-level container to group
+        elements.
+      </p>
+      <pre><code>&lt;div&gt;
+  &lt;img src="avatar.png"&gt;
+  &lt;h2&gt;Arjun Kumar&lt;/h2&gt;
+  &lt;p&gt;Loves to code and teach HTML.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+      <p>To target groups:</p>
+      <ul>
+        <li><strong>id</strong>: unique identifier (only once per page).</li>
+        <li><strong>class</strong>: reusable label (used on many elements).</li>
+      </ul>
+
+      <h2>The &lt;span&gt;</h2>
+      <p>
+        <strong>&lt;span&gt;</strong> is an inline container for styling a part
+        of text.
+      </p>
+      <pre><code>&lt;p&gt;This is very &lt;span class="highlight"&gt;important&lt;/span&gt; information.&lt;/p&gt;</code></pre>
+
+      <h2>Semantic Tags</h2>
+      <ul>
+        <li>
+          <strong>&lt;header&gt;</strong>: Intro content, usually logo + nav.
+        </li>
+        <li>
+          <strong>&lt;footer&gt;</strong>: Closing content (copyright, links).
+        </li>
+        <li>
+          <strong>&lt;main&gt;</strong>: The unique, main content of the page.
+        </li>
+      </ul>
+      <a href="list-table.html">
+        <button>Previous</button>
+      </a>
+      <a href="forms.html">
+        <button>Next</button>
+      </a>
+      <hr />
+    </main>
+    <!-- main section ends  -->
+    <!-- footer section starts  -->
+    <footer>
+      <p>Go to <a href="./index.html">Home</a></p>
+      <p>
+        Reach me via <a href="https://github.com/thekeshabaryal5">Github</a>
+        <a href="https://www.linkedin.com/in/thekeshabaryal5/">linkedIn</a>
+        <a href="mailto:keshabaryal152@gmail.com">Email</a>
+      </p>
+      <p>Copyright &copy;2025 by Keshab Aryal | All Rights Reserved</p>
+    </footer>
+    <!-- footer section ends  -->
+  </body>
+</html>

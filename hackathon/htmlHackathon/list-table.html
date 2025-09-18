@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list & tables</title>
+  </head>
+  <body>
+    <!-- header section starts  -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./elements.html">HTML Elements</a></li>
+          <li><a href="./list-table.html">Nested List & Tables</a></li>
+          <li><a href="./file-path.html">File Path</a></li>
+          <li><a href="./forms.html">HTML Form</a></li>
+          <li><a href="./mediaTag.html">Media Tags</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header section ends  -->
+    <!-- main section starts  -->
+    <main>
+      <h1>HTML Lists and Tables</h1>
+      <p>
+        This page gives a brief note on HTML nested lists and tables including
+        <code>rowspan</code> and <code>colspan</code> attributes.
+      </p>
+
+      <h2>HTML Nested Lists</h2>
+      <p>
+        Lists are used to display related items. A nested list means placing one
+        list inside another list item.
+      </p>
+
+      <h3>Example of Nested List</h3>
+      <ul>
+        <li>
+          Fruits
+          <ul>
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>
+              Citrus
+              <ol>
+                <li>Orange</li>
+                <li>Lemon</li>
+              </ol>
+            </li>
+          </ul>
+        </li>
+        <li>
+          Vegetables
+          <ul>
+            <li>
+              Leafy
+              <ul>
+                <li>Spinach</li>
+                <li>Kale</li>
+              </ul>
+            </li>
+            <li>
+              Root
+              <ul>
+                <li>Carrot</li>
+                <li>Beetroot</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <h2>HTML Tables</h2>
+      <p>
+        Tables are used to organize data into rows and columns.
+        <code>rowspan</code> merges cells vertically, and
+        <code>colspan</code> merges cells horizontally.
+      </p>
+
+      <h3>Example of Table with Rowspan and Colspan</h3>
+      <table border="1">
+        <caption>
+          Student Marks
+        </caption>
+        <tr>
+          <th rowspan="2">Name</th>
+          <th colspan="2">Marks</th>
+        </tr>
+        <tr>
+          <th>Math</th>
+          <th>Science</th>
+        </tr>
+        <tr>
+          <td>Alex</td>
+          <td>85</td>
+          <td>90</td>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>88</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td colspan="2">Absent</td>
+        </tr>
+      </table>
+
+      <h2>Notes</h2>
+      <ul>
+        <li>
+          Use lists to group items logically. Nested lists help represent
+          hierarchy.
+        </li>
+        <li>Tables should be used only for tabular data.</li>
+        <li>
+          <code>rowspan</code> and <code>colspan</code> help to merge table
+          cells.
+        </li>
+      </ul>
+      <a href="elements.html">
+        <button>Previous</button>
+      </a>
+      <a href="file-path.html">
+        <button>Next</button>
+      </a>
+      <hr />
+    </main>
+    <!-- main section ends  -->
+    <!-- footer section starts  -->
+    <footer>
+      <p>Go to <a href="./index.html">Home</a></p>
+      <p>
+        Reach me via <a href="https://github.com/thekeshabaryal5">Github</a>
+        <a href="https://www.linkedin.com/in/thekeshabaryal5/">linkedIn</a>
+        <a href="mailto:keshabaryal152@gmail.com">Email</a>
+      </p>
+      <p>Copyright &copy;2025 by Keshab Aryal | All Rights Reserved</p>
+    </footer>
+    <!-- footer section ends  -->
+  </body>
+</html>
