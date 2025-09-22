@@ -1,0 +1,10 @@
+                                                                    transition
+transition
+transition-property:background-color: // mention which property you want to transit. Normally we keep the value all.
+transition-duration:3s;
+
+
+transition vs animation:
+animation is automatically played while transition requires some trigerness.
+
+transform: scale(2) // means we extend all the dimensions of object by the scale of 2 unit.
