@@ -1,0 +1,12 @@
+why only js ? 
+why not other language ?
+
+
+what runs js in browser ?
+        Chrome ----> v8 engine
+        mozila firefox ----> spiderMonkey
+
+
+what is v8 engine ? Its compiled c++ code which understands the js and performs accordingly.
+
+to use js in our pc we use nodejs.
