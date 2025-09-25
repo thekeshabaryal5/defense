@@ -1,0 +1,21 @@
+how to make a variable ?
+let name = "keshab"
+
+var has a function scope and a global scoped (if declared at a global scope) and shows unusual behaviour so we don't use var instead we use let and const.
+
+
+data types:
+primitive data types:
+    number,string,boolean,undefined, null, bigint, symbol
+
+Non primitive
+    array, object, function
+
+
+bigint
+let num = 1234343534n;
+
+
+typeof operator to know the type of variable.
+
+primitive vs non-primitive data type.
