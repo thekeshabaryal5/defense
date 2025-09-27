@@ -1,0 +1,9 @@
+stack vs heap ?
+
+stack stores the static data (fixed size data) in its own while for dynamic data it stores its address and that dynamic data is actually stored in heap memory.
+
+so when we want a data we go for stack if its static we get the data from there only, while if its dynamic we get the address to heap memory.
+
+32 bit OS vs 64 bit OS:
+in 32bit machine the maximum addresses supported is: 2^32, but the memory is byte addressable.
+i.e 32bit can support 2^32 bytes of memory nearly equal to 4GB of memory.
