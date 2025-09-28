@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  height: 200vh;
+}
+.container {
+  height: 400px;
+  width: 400px;
+  background-color: rgb(75, 227, 227);
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+.box {
+  height: 20px;
+  width: 50px;
+  border: 2px solid blue;
+}
+.first-first {
+  position: relative;
+  top: 20px;
+}
+.first-second {
+  position: relative;
+  /* top: 50px; */
+}
+
+.second-first {
+  background-color: white;
+  position: sticky;
+  top: 20px;
+}
+.second-second {
+  background-color: blue;
+}
+.container-two {
+  height: 400px;
+  width: 400px;
+  background-color: rgb(118, 195, 195);
+  margin-top: 50px;
+  margin-left: 50px;
+}
