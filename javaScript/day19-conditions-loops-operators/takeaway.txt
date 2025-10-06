@@ -1,0 +1,93 @@
+operators in js
++ ------> Addition
+- -------> Substraction
+* -------> Multiplication
+/ ------> Division
+% -------> Modulus
+** -------> Power
+
+Assignment operator
+=
++=
+-=
+*=
+/=
+%=
+
+
+Comparision operator
+>
+<
+==
+===
+
+Type conversion:
+
+We can convert a datatype from one type to another.
+let a= 10;
+let b = Number(a);
+console.log(typeof(b)) ----> number
+
+console.log(Number(true)) ----> 1
+console.log(Number(false)) ----> 0
+
+Number(null) -----> 0
+Number(undefined) ----> NaN
+
+Rule of thumb:
+1. null is loosely equal to undefined only
+    e.g:
+        null == undefined ----> true
+        null ===undefined -----> false
+        null == false -----> false
+        null == 0 ------> false
+        null === 0 -----> false
+
+
+2. During comparisons operator i.e. > < >= <= null is converted to a number
+console.log(null>=0) ----> true (as null is treated as 0 here)
+
+3. When strings are compared, the ascii value of corresponding characters are compared and result is decided.
+    i.e. "Rohit">"Mohit" ----> true as ascii value of R is greater than that of M
+
+loops:
+
+for loop
+for(let i=0;i<10;i++)
+{
+    console.log(i);
+}
+
+while loop
+let i=0
+while(i<10)
+{
+    console.log(i);
+    i++;
+}
+
+do-while loop
+let i=10;
+do{
+    console.log(i);
+    i--;
+}while(i>1)
+
+if-else condition;
+age = 18;
+if(age>=18)
+{
+    console.log("Eligible for vooting")
+}
+else
+{
+    console.log("Not eligible for vote") 
+}
+
+
+logical operator
+&& ---> logical AND ----> if first value is true it will return first value itself, else second value is returned
+|| ---> logical OR -------> whichever value is true thats returned
+
+
+!= not equal operator
