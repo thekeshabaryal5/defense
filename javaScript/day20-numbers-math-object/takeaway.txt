@@ -1,0 +1,8 @@
+Number
+
+Methods in Number
+toFixed(n)
+let a = 32.253;
+a.toFixed(1) ---->32.2
+a.toFixed(2)----> 32.25
+
