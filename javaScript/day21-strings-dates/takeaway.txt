@@ -1,0 +1,50 @@
+String
+Different ways to create a string
+    1.Using double quotation: "" ---> "Keshab Aryal"
+    2.Using Single quotation: '' ----> 'Keshab Aryal'
+    3.Using backtick `` ---->   `Keshab Aryal`
+
+String Methods:
+1. length -----> returns the length of the string
+    e.g: let str1 = "Keshab"
+             str1.length ---> 6
+
+2. toUpperCase() ---> returns the uppercase version of the string.
+    e.g: let str1 = "abcd"
+            str1.toUpperCase() ---> "ABCD"
+            This method doesn't change the original string but returns the new string which is uppercase of original string
+
+3. toLowerCase() ------> return the lowercase version of the given  string.
+    e.g: let str1 = "ABCD";
+        str1.toLowerCase() ----> "abcd"
+        This method doesn't change the original string but returns the new string which is lowercase of the original string
+
+4. indexOf() ----> returns the first indexOf of substring if matched else returns -1.
+    e.g: let str1 = "perfection is just an illusion";
+    str1.indexOf("is") -----> 11
+
+    str1.indexOf("my") ----> -1
+
+    str1.indexOf("ion") -----> 7
+    though the substring "ion" is also present at the end of the string this method always returns the first available index.
+
+5. lastIndexOf() -----> returns the last index of the substring if matched, else returns -1
+    e.g:    let str1 = "perfection is an illusion";
+            str1.lastIndexOf("ion") ----> 27
+
+            str1.lastIndexOf("per") ---> 0
+
+6. includes() ----> this method checks if the substring is present in the given string or not. If the substring is present, it returns true else it returns false. 
+    e.g:    let str1 = "perfection is an illusion"
+            str1.includes("an") ---> true
+            str1.includes("AN") ---> false
+
+7. slice() -----> slices the original string from the given index and provides the new string.This methods takes two arguments, start and end index of only one index is provided then end index is taken as length of the string.The sliced string will not contain the character of last index.
+        e.g: let str1 = "perfection is an illusion";
+                 str1.slice(1,5) ---->  erfe
+
+        This method also accept the negative index, the negative index takes the character from last of the string.
+        i.e
+        str1.slice(-4,-1) ----> sio 
+
+8. substring(2,5) ----> doesn't accept negative index
