@@ -1,0 +1,15 @@
+.banner {
+  height: 50px;
+  width: 900px;
+  background-color: pink;
+  border: 2px solid green;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap:20px
+}
+
+.items {
+  font-size: 24px;
+}
